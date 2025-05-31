@@ -49,8 +49,11 @@ WpfFileManager/
 
 ## 使用到的 NuGet 套件
 
-**ClosedXML**
-用於 Excel (XLSX) 檔案的讀取與寫入。
+1. **ClosedXML**  
+    用於 Excel (XLSX) 檔案的讀取與寫入。
 
-**DocumentFormat.OpenXml**
-為 ClosedXML 內部依賴，會自動安裝。
+2. **DocumentFormat.OpenXml**  
+    為 ClosedXML 內部依賴，會自動安裝。
+
+3. **WPF-UI**
+    
