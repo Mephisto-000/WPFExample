@@ -1,0 +1,29 @@
+﻿<ui:FluentWindow x:Class="WpfAppSimpleDataManager.Views.MainWindow"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+                 Title="WpfAppSimpleDataManager"
+                 Height="950"
+                 Width="1200"
+                 WindowStyle="SingleBorderWindow"
+                 ResizeMode="CanResize"
+                 ExtendsContentIntoTitleBar="True">
+    <Grid>
+        <!-- 1. 定義標題列範圍，系統會繪製預設按鈕 -->
+        <ui:TitleBar x:Name="AppTitleBar">
+        </ui:TitleBar>
+
+        <!-- 2. 主要內容區，往下推 32px 避免被 TitleBar 蓋住 -->
+        <Grid Margin="0,32,0,0">
+            <TabControl>
+                <TabItem Header="CSV 檔案">
+                    <!-- CsvView -->
+                </TabItem>
+                <TabItem Header="Excel (XLSX)">
+                    <!-- ExcelView -->
+                </TabItem>
+            </TabControl>
+        </Grid>
+    </Grid>
+
+</ui:FluentWindow>
