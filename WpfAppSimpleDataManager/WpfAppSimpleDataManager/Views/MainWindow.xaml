@@ -17,10 +17,10 @@
         <!-- 2. 主要內容區，往下推 32px 避免被 TitleBar 蓋住 -->
         <Grid Margin="0,32,0,0">
             <TabControl>
-                <TabItem Header="CSV 檔案">
+                <TabItem Header="CSV File (.csv)">
                     <views:CsvView />
                 </TabItem>
-                <TabItem Header="Excel (XLSX)">
+                <TabItem Header="Excel File (.xlsx)">
                     <views:ExcelView />
                 </TabItem>
             </TabControl>
