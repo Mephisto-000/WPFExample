@@ -21,7 +21,7 @@
                     <views:CsvView />
                 </TabItem>
                 <TabItem Header="Excel (XLSX)">
-                    <!-- ExcelView -->
+                    <views:ExcelView />
                 </TabItem>
             </TabControl>
         </Grid>

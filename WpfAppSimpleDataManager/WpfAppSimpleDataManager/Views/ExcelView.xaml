@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="WpfAppSimpleDataManager.Views.ExcelView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10" HorizontalAlignment="Left">
+            <Button Content="New XLSX" Command="{Binding CreateNewCommand}" Width="105"/>
+            <Button Content="Open XLSX" Command="{Binding OpenCommand}" Width="105"/>
+            <Button Content="Save XLSX" Command="{Binding SaveCommand}" Width="105"/>
+            <Button Content="Delete XLSX" Command="{Binding DeleteCommand}" Width="105"/>
+        </StackPanel>
+        <DataGrid ItemsSource="{Binding DataTable}" 
+                  Grid.Row="1" 
+                  AutoGenerateColumns="True"
+                  CanUserAddRows="True"
+                  CanUserDeleteRows="True"/>
+    </Grid>
+</UserControl>
