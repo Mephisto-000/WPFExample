@@ -61,10 +61,21 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
+                <!-- 排序區 -->
                 <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="10,10,0,10">
                     <Label Content="Sorted By" FontSize="20" VerticalAlignment="Center"/>
-                    <ComboBox Width="140" Margin="10,0,0,0" FontSize="18" VerticalAlignment="Center"/>
-                    <CheckBox Content="Descending" Margin="10,0,0,0" FontSize="15" VerticalAlignment="Center"/>
+                    <!-- 排序欄位選單，記得 ItemsSource 與 SelectedItem 綁定 -->
+                    <ComboBox Width="140"
+                              Margin="10,0,0,0"
+                              FontSize="18"
+                              VerticalAlignment="Center"
+                              ItemsSource="{Binding SortByList}"
+                              SelectedItem="{Binding SelectedSortBy, Mode=TwoWay}"/>
+                    <CheckBox Content="Descending"
+                              Margin="10,0,0,0"
+                              FontSize="15"
+                              VerticalAlignment="Center"
+                              IsChecked="{Binding IsDescending, Mode=TwoWay}"/>
                 </StackPanel>
                 <!-- DataGrid 綁定 Tasks -->
                 <DataGrid Grid.Row="1"
