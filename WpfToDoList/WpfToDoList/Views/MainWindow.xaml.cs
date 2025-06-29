@@ -27,5 +27,10 @@ namespace WpfToDoList.Views
         {
             vm.AddTask();
         }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.DeleteTask();
+        }
     }
 }
